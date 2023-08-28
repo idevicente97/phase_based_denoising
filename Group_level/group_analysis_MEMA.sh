@@ -6,7 +6,14 @@
 #$ -N Group analysis MEMA
 #$ -S /bin/bash
 
-PRJDIR=~/public/HBP_phase
+if [[ -z "${PRJDIR}" ]]; then
+  if [[ ! -z "$1" ]]; then
+     SUBJ=$1
+  else
+     echo -e "\e[31m++ ERROR: You need to input PRJDIR as ENVIRONMENT VARIABLE or $1. Exiting!! ...\e[39m"
+     exit
+  fi
+fi
 
 if [[ ! -d ${PRJDIR}/PREPROC/00_Group_analysis ]]; then
     echo "\e[35m ++ Creating ${PRJDIR}/PREPROC/00_Group_analysis ...\e[39m"
