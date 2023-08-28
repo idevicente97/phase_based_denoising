@@ -1,6 +1,8 @@
 # Phase-based denoising pipeline
 
-This pipeline is organized as following:
+This repository contains the relevant scripts relative to the following study: [Paper-Link to be added]
+
+The pipeline is organized as following:
 
 * Both single-subject & group-level preprocessing and analysis are carried out by executing the script `<00_main.sh>` through the terminal, which runs the scripts in the corresponding order. The purpose of each script is briefly described below.
 
