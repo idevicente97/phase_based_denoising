@@ -40,5 +40,5 @@ do
   # sh ${BASEDIR}/Subject_level/vein_mapping.sh ${PRJDIR} ${SUBJ}                         # Computing vein delineation maps
 done
 
-sh ${BASEDIR}/Group_level/group_analysis_MEMA.sh # Calculate Group-level activation maps and denoising-difference maps
+sh ${BASEDIR}/Group_level/group_analysis_MEMA.sh ${PRJDIR} # Calculate Group-level activation maps and denoising-difference maps
 sh ${BASEDIR}/Subject_level/ROI_betas.sh ${PRJDIR} ${ROIDIR}                # Calculating betas for each ROI
